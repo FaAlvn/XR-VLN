@@ -111,10 +111,9 @@
             <div class="content">
                 <p>
                     We present an XR-assisted pipeline for collecting aligned (image, language, action) data for vision-language navigation (VLN). Rather than relying on joystick or controller inputs, our approach uses the pose of the head-mounted display (HMD), its position, orientation, and field of view, to directly drive the agent’s viewpoint and motion in a simulated environment. This design aims to capture more natural, human-like navigation behavior through embodied interaction. The system is built in Unity and integrated with the AI2-THOR simulator, enabling first-person navigation in indoor scenes with language-conditioned goals (e.g., “go to the mug”).
-At each timestep, the system records synchronized tuples of RGB observations, a fixed language goal, and actions derived from HMD motion. We investigate three questions: (1) whether XR can support a reliable pipeline for collecting aligned multimodal navigation data, (2) whether a relatively small XR-collected dataset is sufficient to fine-tune a navigation policy, and (3) how XR-based demonstrations compare qualitatively to trajectories collected via traditional teleoperation or scripted methods. This work evaluates XR as an alternative data collection modality for embodied AI, with an emphasis on alignment quality and behavioral realism.
-Current Progress
-We have implemented a complete XR-based data collection system in Unity integrated with AI2-THOR. The key design choice is that agent motion is driven directly by HMD pose, rather than external control inputs. We log the full HMD state, including position, orientation, and camera field of view, allowing precise reconstruction of the agent’s trajectory and viewpoint over time.
-Using this setup, we have collected approximately 300 trajectories across a range of indoor navigation tasks (e.g., navigating to mugs, tables, and sinks under language instructions). Each trajectory consists of temporally aligned (Iₜ, g, aₜ) tuples, where actions are derived from changes in HMD pose. The data pipeline for recording, storing, and replaying these trajectories is functional and stable.
+                </p>
+                <p>
+                    At each timestep, the system records synchronized tuples of RGB observations, a fixed language goal, and actions derived from HMD motion. We investigate three questions: (1) whether XR can support a reliable pipeline for collecting aligned multimodal navigation data, (2) whether a relatively small XR-collected dataset is sufficient to fine-tune a navigation policy, and (3) how XR-based demonstrations compare qualitatively to trajectories collected via traditional teleoperation or scripted methods. This work evaluates XR as an alternative data collection modality for embodied AI, with an emphasis on alignment quality and behavioral realism.
                 </p>
             </div>
         </div>
@@ -124,12 +123,22 @@ Using this setup, we have collected approximately 300 trajectories across a rang
             <h2>Current Progress</h2>
             <div class="content">
                 <p>
-                   - Implemented an XR-based data collection system in Unity integrated with AI2-THOR  
-                   - Agent motion is driven directly by HMD pose *(position, orientation, FOV)*, which is fully logged  
-                   - Collected $\sim 300$ trajectories for language-conditioned indoor navigation tasks  
-                   - Each trajectory consists of aligned $(I_t, g, a_t)$ tuples derived from HMD motion  
-                   - Data recording, storage, and replay pipeline is functional and stable  
+                   - Implemented an XR-based data collection system in Unity integrated with AI2-THOR.
                 </p>
+                <p>
+                    - Agent motion is driven directly by HMD pose (position, orientation, FOV), which is fully logged.
+                </p>
+                <p>
+                    - Collected $\sim 300$ trajectories for language-conditioned indoor navigation tasks.
+                </p>    
+                <p>
+                    - Each trajectory consists of aligned $(I_t, g, a_t)$ tuples derived from HMD motion.
+                </p>  
+                <p>
+                    - Data recording, storage, and replay pipeline is functional and stable.
+                </p>     
+                     
+                
 
                 <!-- Video Placeholder -->
                  <figure class="video-figure">
@@ -148,7 +157,7 @@ Using this setup, we have collected approximately 300 trajectories across a rang
                         Your browser does not support the video tag.
                     </video>
                     <figcaption>
-                        Figure 1: A trajectory towards a piece of bread
+                        Figure 2: A trajectory towards a piece of bread
                     </figcaption>
                 </figure>
 
@@ -158,7 +167,7 @@ Using this setup, we have collected approximately 300 trajectories across a rang
                         Your browser does not support the video tag.
                     </video>
                     <figcaption>
-                        Figure 1: A trajectory towards a tomato
+                        Figure 3: A trajectory towards a tomato
                     </figcaption>
                 </figure>
                     
@@ -168,7 +177,7 @@ Using this setup, we have collected approximately 300 trajectories across a rang
                         Your browser does not support the video tag.
                     </video>
                     <figcaption>
-                        Figure 1: A trajectory towards a tomato
+                        Figure 4: A trajectory towards a tomato
                     </figcaption>
                 </figure>
 
