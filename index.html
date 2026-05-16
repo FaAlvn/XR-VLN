@@ -191,11 +191,11 @@
         </div>
 
         <div class="section">
-            <h2>Vision Language Action Model</h2>
+            <h2>Vision Language Action Model Specifications</h2>
             <div class="content">
 
                 <p>
-                   - Omni-modal goal conditioning (Collected dataset supports language based, image based and waypoint based goals)
+                   - Supports Omni-modal goal conditioning (Collected dataset supports language based, image based and waypoint based goals)
 
                 </p>
                 <p>
@@ -203,7 +203,7 @@
 
                 </p>
                 <p>
-                    - Custom dataloader for our dataset
+                    - Custom dataloader designed for this dataset.
 
                 </p>    
                
@@ -224,20 +224,33 @@
         </div>
 
         <div class="section">
-            <h2>Fine-tuning the VLA</h2>
-             <h3>Infrastructure:</h3>
+            <h2>Fine-tuning the VLA Progess</h2>
+             <h3>Infrastructure Complete:</h3>
             <div class="content">
                 <p>
                    
-                   - Distributed training (DDP) across multiple GPUs configured
+                   - Distributed training (DDP) across multiple GPUs configured.
                 </p>
                 <p>
-                    - Custom dataloader built for our (image, language, action) format
+                    - Custom dataloader built for our (image, language, action) format.
                 </p>
                 <p>
                     - LoRA fine-tuning integrated on image encoder / action head. 
 
                 </p>    
+                
+            </div>
+            <h3>Training in Progress:</h3>
+            <div class="content">
+                <p>
+                   
+                   - Pipeline end-to-end connected; Currently resolving data preprocessing bug.
+                </p>
+                <p>
+                    - Results expected imminently — infrastructure overhead is complete.
+.
+                </p>
+                
                 
             </div>
         </div>
